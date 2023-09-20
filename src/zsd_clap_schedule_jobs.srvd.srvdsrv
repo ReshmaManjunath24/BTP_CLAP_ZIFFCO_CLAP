@@ -1,0 +1,9 @@
+@EndUserText.label: 'Service definition for CLAP Job Scheduling'
+define service ZSD_CLAP_SCHEDULE_JOBS {
+  expose ZDD_SCHEDULE_BP_UPDATE;
+  expose ZDD_UPDATE_CREDIT_LIMIT_API    as customer;
+  expose ZDD_CREATE_CREDIT_LIMIT_API    as Credit_Create;
+  expose ZDD_ANNAUL_APRSAL_NOTIFICATION as Annual_Appraisal;
+  expose ZDD_ANNUAL_TRADE_NOTIFICATION  as Trade_Notification;
+  expose ZDD_ANNUAL_TRADE_NOTIFI_60DAY  as Trade_Notification_60;
+}

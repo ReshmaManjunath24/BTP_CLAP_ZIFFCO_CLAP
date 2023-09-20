@@ -1,0 +1,15 @@
+@EndUserText.label: 'Workflow: Customer'
+define service ZSD_WF_CUSTOMER {
+  expose ZDD_WF_CUSTOMER                as customer;
+  expose ZDD_WF_CUSTOMER_APPROVERS      as approvers;
+  expose ZDD_WF_CUSTOMER_CREAT_CUSTOMER as create_customer;
+  expose ZDD_WF_CUSTOMER_CHANG_CUSTOMER as change_customer;
+  expose ZDD_WF_GET_APPROVERS_MD        as md_approvers;
+  expose ZDD_UPDATE_CREDIT_LIMIT_API    as credit_update;
+  expose ZDD_WF_REVIEWERS_ENTITY        as reviewers;
+  expose ZDD_CLAP_QUERY_NOTIFICATION    as Query;
+  expose ZDD_CLAP_QUERY_NOTIFICATION_DS as Queryds;
+  expose ZDD_ANNUAL_NOTIFI_INITIATOR    as NotifyInitiator;
+  expose ZDD_ANNUAL_NOTIFI_REVIEWER     as NotificationReviewer;
+  expose ZDD_DATA_STEWARD_NOTIFICATION  as NotificationDSteward;
+}

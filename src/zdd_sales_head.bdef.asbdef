@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_sales_head unique;
+//strict ( 2 );
+
+define behavior for ZDD_SALES_HEAD //alias <alias_name>
+persistent table ztab_sales_head
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

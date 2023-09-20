@@ -1,0 +1,14 @@
+managed implementation in class zbp_dd_usr_mapping unique;
+//strict ( 2 );
+
+define behavior for ZDD_USR_MAPPING alias User_Access
+persistent table ztab_usr_mapping
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+late numbering
+{
+  create;
+  update;
+  delete;
+}

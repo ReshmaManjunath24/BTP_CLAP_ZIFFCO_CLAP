@@ -1,0 +1,34 @@
+managed implementation in class zbp_dd_req_history unique;
+//strict ( 1 );
+
+define behavior for ZDD_REQ_HISTORY alias History
+persistent table ztab_req_history
+lock master
+//authorization master ( instance )
+//late numbering
+{
+
+  create;
+  update;
+  delete;
+
+  mapping for ZDD_REQ_HISTORY
+
+  {
+  zcustomer_num = zcustomer_num;
+  zbusiness_partner_id = zbusiness_partner_id;
+  zrequest_no = zrequest_no;
+  ztrail_remarks = ztrail_remarks;
+  ztrail_role = ztrail_role;
+  ztrail_tot_cl_approved = ztrail_tot_cl_approved;
+  ztrail_status = ztrail_status;
+  ztrail_user = ztrail_user;
+  ztrailmax_credit_days = ztrailmax_credit_days;
+  ztrail_date = ztrail_date;
+  ztrail_version = ztrail_version;
+
+
+
+  }
+
+}

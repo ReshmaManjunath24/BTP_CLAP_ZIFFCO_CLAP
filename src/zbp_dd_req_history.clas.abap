@@ -1,0 +1,5 @@
+CLASS zbp_dd_req_history DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zdd_req_history.
+ENDCLASS.
+
+CLASS zbp_dd_req_history IMPLEMENTATION.
+ENDCLASS.

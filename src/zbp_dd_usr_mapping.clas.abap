@@ -1,0 +1,5 @@
+CLASS zbp_dd_usr_mapping DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zdd_usr_mapping.
+ENDCLASS.
+
+CLASS zbp_dd_usr_mapping IMPLEMENTATION.
+ENDCLASS.
